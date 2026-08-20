@@ -1,4 +1,4 @@
-package com.miguelsouza.webservices.application;
+package com.miguelsouza.webservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
