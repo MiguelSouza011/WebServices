@@ -1,9 +1,7 @@
 package com.miguelsouza.webservices.services;
 
 import com.miguelsouza.webservices.entities.Order;
-import com.miguelsouza.webservices.entities.User;
 import com.miguelsouza.webservices.repositories.OrderRepository;
-import com.miguelsouza.webservices.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
