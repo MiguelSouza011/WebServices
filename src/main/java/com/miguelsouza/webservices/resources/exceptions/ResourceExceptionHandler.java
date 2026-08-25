@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.time.Instant;
 
-import static org.aspectj.weaver.tools.cache.SimpleCacheFactory.path;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
