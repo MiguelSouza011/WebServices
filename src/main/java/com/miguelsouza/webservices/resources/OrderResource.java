@@ -1,7 +1,6 @@
 package com.miguelsouza.webservices.resources;
 
 import com.miguelsouza.webservices.entities.Order;
-import com.miguelsouza.webservices.entities.User;
 import com.miguelsouza.webservices.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

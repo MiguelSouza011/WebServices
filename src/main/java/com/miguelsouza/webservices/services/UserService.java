@@ -2,8 +2,11 @@ package com.miguelsouza.webservices.services;
 
 import com.miguelsouza.webservices.entities.User;
 import com.miguelsouza.webservices.repositories.UserRepository;
+import com.miguelsouza.webservices.services.exceptions.DataBaseException;
 import com.miguelsouza.webservices.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,11 +32,16 @@ public class UserService {
     }
 
     public User insert(User obj) {
-        return repository.save(obj);
-    }
+            return repository.save(obj); }
 
     public void delete(Long id) {
-        repository.deleteById(id);
+        try {
+            repository.deleteById(id);
+        } catch (EmptyResultDataAccessException e){
+            throw new ResourceNotFoundException(id);
+        }catch (DataIntegrityViolationException e) {
+            throw new DataBaseException(e.getMessage());
+        }
     }
 
     public User update(Long id, User obj) {
