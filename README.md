@@ -1,4 +1,4 @@
-# 🌐 Spring Boot RESTful Web Services & Domain Management
+# 🌐 Spring Boot REST Web Services & Domain Management
 
 [![Java 25](https://img.shields.io/badge/Java-25-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://jdk.java.net/25/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4%2B%20%2F%204.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
@@ -6,7 +6,7 @@
 [![H2 Database](https://img.shields.io/badge/Database-H2%20%2F%20In--Memory-004880?style=for-the-badge)](https://www.h2database.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> **Web API RESTful & Persistência Relacional com Bleeding-Edge Tech Stack**: API desenvolvida utilizando o ecossistema de ponta **Java 25** e **Spring Boot**, aplicando arquitetura em camadas (Controller, Service, Repository), ORM Jakarta JPA moderno e gerenciamento completo de domínios (Usuários, Pedidos, Categorias, Produtos e Pagamentos).
+> **Web API REST & Persistência Relacional com Bleeding-Edge Tech Stack**: API desenvolvida utilizando o ecossistema de ponta **Java 25** e **Spring Boot**, aplicando arquitetura em camadas (Controller, Service, Repository), ORM Jakarta JPA moderno e gerenciamento completo de domínios (Usuários, Pedidos, Categorias, Produtos e Pagamentos).
 
 ---
 
